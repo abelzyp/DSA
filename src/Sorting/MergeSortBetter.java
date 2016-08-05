@@ -1,13 +1,11 @@
 package Sorting;
 
 /*
- * 对于一个int数组，请编写一个归并排序算法，对数组元素排序。
- * 给定一个int数组A及数组的大小n，请返回排序后的数组。
+ * 归并排序算法对int数组元素进行排序
  */
-public class MergeSortDemo1 {
-	public static int[] mergeSort(int[] A, int n) {
-		// write code here
-		sort(A, 0, n - 1);
+public class MergeSortBetter {
+	public static int[] mergeSort(int[] A) {
+		sort(A, 0, A.length - 1);
 		return A;
 	}
 
