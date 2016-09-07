@@ -120,12 +120,4 @@ public class LinkBiTree {
 		PostOrder(bt.rchild);
 		Visit(bt);
 	}
-
-	/*
-	 * 二叉树遍历（非递归方法遍历）
-	 */
-	// 先序遍历
-	public void NRPreOrder(LinkBiTNode bt) {
-
-	}
 }
