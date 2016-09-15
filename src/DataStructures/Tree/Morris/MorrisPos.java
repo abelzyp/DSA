@@ -2,6 +2,10 @@ package DataStructures.Tree.Morris;
 
 /*
  * 神级遍历方法之后序遍历
+ * 
+ * 步骤：
+ * 		Morris后序遍历的实现也是Morris中序遍历实现的改写，但包含更复杂的调整过程。
+ * 		总的来说，就是依次逆序打印所有节点的左子树的右边界，打印的时机放在步骤2的条件a被触发的时候，也就是说调整回去的过程发生的时候。
  */
 public class MorrisPos {
 	public static void morrisPos(Node head) {
