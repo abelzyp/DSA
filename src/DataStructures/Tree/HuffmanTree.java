@@ -23,8 +23,8 @@ public class HuffmanTree {
 
 		@Override
 		public String toString() {
-			return "Node [data=" + data + ", weight=" + weight + ", lchild="
-					+ lchild + ", rchild=" + rchild + "]" + "\n";
+			return "Node [data=" + data + ", weight=" + weight + ", lchild=" + lchild + ", rchild=" + rchild + "]"
+					+ "\n";
 		}
 	}
 
@@ -48,15 +48,13 @@ public class HuffmanTree {
 	 * @return 构造出来的Huffman树的根节点
 	 */
 	private static Node<String> createTree(List<Node<String>> nodes) {
-		// TODO Auto-generated method stub
 		while (nodes.size() > 1) {
 			quickSort(nodes);
 			// 获取权值最小的两个节点
 			Node<String> left = nodes.get(nodes.size() - 1);
 			Node<String> right = nodes.get(nodes.size() - 2);
 			// 生成新节点，新节点的权值为两个子节点的权值之和
-			Node<String> parent = new Node<String>(null, left.weight
-					+ right.weight);
+			Node<String> parent = new Node<String>(null, left.weight + right.weight);
 			// 让新节点作为权值最小的两个节点的父节点
 			parent.lchild = left;
 			parent.rchild = right;
@@ -75,7 +73,6 @@ public class HuffmanTree {
 	 * @param nodes
 	 */
 	private static void quickSort(List<Node<String>> nodes) {
-		// TODO Auto-generated method stub
 		subSort(nodes, 0, nodes.size() - 1);
 	}
 
@@ -87,7 +84,6 @@ public class HuffmanTree {
 	 * @param j
 	 */
 	private static void subSort(List<Node<String>> nodes, int start, int end) {
-		// TODO Auto-generated method stub
 		// 需要排序
 		if (start < end) {
 			// 以第一个元素作为分界值
@@ -125,7 +121,6 @@ public class HuffmanTree {
 	 * @param j
 	 */
 	private static void swap(List<Node<String>> nodes, int i, int j) {
-		// TODO Auto-generated method stub
 		Node<String> tmp;
 		tmp = nodes.get(i);
 		nodes.set(i, nodes.get(j));
