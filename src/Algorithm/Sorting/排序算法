@@ -9,3 +9,4 @@
 	快速排序		O(nlogn)	O(logn)	不稳定
 	
 	归并排序		O(nlogn)	O(n)	稳定
+	桶排序		O(n+k)		O(n+k)	稳定
