@@ -1,9 +1,9 @@
-package Algorithm.Sorting;
+package Algorithm.Sorting.MergeSort;
 
 /*
  * 归并排序算法对int数组元素进行排序
  */
-public class MergeSortBetter {
+public class MergeSortOld {
 	public static int[] mergeSort(int[] A) {
 		sort(A, 0, A.length - 1);
 		return A;
