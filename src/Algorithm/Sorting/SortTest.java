@@ -13,7 +13,6 @@ public class SortTest {
 		// ShellSort.sort(arr);
 		// QuickSort.sort(arr);
 		// MergeSort.sort(arr);
-		HeapSortOld.sort(arr);
 		// QuickSortBetter.quick_sort(arr, 0, arr.length - 1);
 		System.out.println("排序后：" + Arrays.toString(arr));
 	}
